@@ -1,0 +1,5 @@
+<p>student-details works!</p>
+<button mat-raised-button (click)="goBack()"><mat-icon>arrow_back</mat-icon>Back</button>
+{{ studentId }}
+{{ student$ | async | json }}
+<app-student-card [selectedStudent]="student$ | async" (received)="showRecivedValue($event)"></app-student-card>
